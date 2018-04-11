@@ -208,13 +208,7 @@ namespace System.Web.Http.Description
 
                     foreach (ApiDescription description in descriptionsFromRoute)
                     {
-                        // Do not add the description if the previous route has a matching description with the same HTTP method and relative path.
-                        // E.g. having two routes with the templates "api/Values/{id}" and "api/{controller}/{id}" can potentially produce the same
-                        // relative path "api/Values/{id}" but only the first one matters.
-                        if (!apiDescriptions.Contains(description, descriptionComparer))
-                        {
-                            apiDescriptions.Add(description);
-                        }
+                        apiDescriptions.Add(description);
                     }
                 }
             }
