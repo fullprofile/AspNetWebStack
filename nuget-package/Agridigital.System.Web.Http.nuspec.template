@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Agridigital.System.Web.Http</id>
+    <version>[VERSION]</version>
+    <authors>AgriDigital</authors>
+    <owners>AgriDigital</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A fork of System.Web.Http with a customised ApiExplorer</description>
+    <copyright>Copyright 2018</copyright>
+  </metadata>
+</package>
