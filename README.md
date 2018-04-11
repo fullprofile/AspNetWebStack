@@ -1,3 +1,16 @@
+AgriDigital ASP.NET fork
+===
+
+This is our fork of the ASP.NET framework (original readme below). The only change is to the `ApiExplorer` class in `System.Web.Http`, which has been modified to allow for our dynamic versioning scheme.
+
+To build a new version of the `Agridigital.System.Web.Http` package and publish it to Nuget, follow these steps:
+
+1. Open the `Runtime` solution in Visual Studio.
+2. Build the `System.Web.Http` project (in release, which should be default). This will compile a new version of `System.Web.Http.dll` and `System.Net.Http.Formatting.dll`.
+3. Edit the Powershell script `publish-package.ps1` to include the correct version number and API key for Nuget (if you don't have it ask Cadel).
+4. Run the Powershell script as an administrator. This will copy the new DLLs to the correct location, generate a nuspec file, mark the DLLs to avoid key verification, build the package, and upload it to Nuget.
+
+
 ASP.NET MVC, Web API, Web Pages, and Razor
 ===
 
